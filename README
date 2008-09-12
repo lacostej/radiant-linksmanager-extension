@@ -1,8 +1,10 @@
 = Links Manager
 
-Small extension to manage links. The extensions provides an admin tab to create links and a redirect controller to use them.
-The links have a name and an optional description. The redirect controller is available to your site and let you use site internal
-urls for internal or external resources. This is useful to track linking to external resources, and for providing know URLs to internal resources whose path isn't controlled (e.g. page attachments).
+Small extension to manage links. The extensions provides an admin tab to create links 
+and a redirect controller to use them. The links have a name, a url and an optional description.
+The redirect controller is available to your site and let you use site internal urls for
+internal or external resources. This is useful to track linking to external resources, and for
+providing known URLs to internal resources whose path isn't controlled (e.g. page attachments).
 
 The implementation is very crude so far. 
 
