@@ -4,7 +4,7 @@
 class LinksManagerExtension < Radiant::Extension
   version "0.1"
   description "Allow to create aliases for internal/external links, allowing to track their clicking, and provide a somewhat predefined URL to a particular resource (e.g. a page attachments)."
-  url "http://FIXME.com/link_redirects"
+  url "http://github.com/lacostej/radiant-linksmanager-extension"
   
   define_routes do |map|
     # is there a way to make combine these 2 connect into one ?
@@ -16,11 +16,11 @@ class LinksManagerExtension < Radiant::Extension
   end
   
   def activate
-    admin.tabs.add "Links Manager", "/admin/links", :after => "Layouts", :visibility => [:all]
+    admin.tabs.add "Redirects", "/admin/links", :after => "Layouts", :visibility => [:all]
   end
   
   def deactivate
-    admin.tabs.remove "Links Manager"
+    admin.tabs.remove "Redirects"
   end
   
 end
