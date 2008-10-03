@@ -8,8 +8,8 @@ class LinksManagerExtension < Radiant::Extension
   
   define_routes do |map|
     # is there a way to make combine these 2 connect into one ?
-    map.connect '/redirect/:link', :controller  => 'admin/redirect', :action => 'redirect'
-    map.connect '/redirect/:link.:extension', :controller  => 'admin/redirect', :action => 'redirect'
+    map.connect '/redirect/:link', :controller  => 'redirect', :action => 'redirect'
+    map.connect '/redirect/:link.:extension', :controller  => 'redirect', :action => 'redirect'
 
     # map.connect 'admin/links_manager/:action', :controller => 'admin/links_manager'
     map.resources :links, :path_prefix => '/admin', :controller  => 'admin/links'

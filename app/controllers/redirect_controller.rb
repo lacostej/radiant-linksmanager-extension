@@ -1,4 +1,4 @@
-class Admin::RedirectController < ApplicationController
+class RedirectController < ApplicationController
   # GET /admin/links
   # GET /admin/links.xml
   def redirect
