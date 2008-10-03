@@ -1,4 +1,6 @@
 class RedirectController < ApplicationController
+  no_login_required
+
   # GET /admin/links
   # GET /admin/links.xml
   def redirect
